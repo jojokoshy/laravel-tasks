@@ -12,14 +12,20 @@
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7"
+        "phpunit/phpunit": "~5.7",
+        "phpunit/phpunit": "~4.8"
+    },    
+    "suggest": {
+        "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol",
+        "ext-curl": "Allows access to Webdis when paired with phpiredis"
     },
     "autoload": {
         "classmap": [
             "database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Predis\\": "src/"
         }
     },
     "autoload-dev": {
