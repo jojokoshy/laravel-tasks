@@ -13,11 +13,14 @@
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7",
-        "phpunit/phpunit": "~4.8"
+        "predis/predis": "1.1.1"
+        
     },    
     "suggest": {
         "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol",
-        "ext-curl": "Allows access to Webdis when paired with phpiredis"
+        "ext-curl": "Allows access to Webdis when paired with phpiredis",
+        "predis/predis": "Either this PHP library or redis extension has to be installed.",
+        "ext-redis": "Either this PHP extension or predis/predis extension has to be installed."
     },
     "autoload": {
         "classmap": [
